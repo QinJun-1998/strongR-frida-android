@@ -23,6 +23,7 @@ jobs:
               owner: 'frida',
               repo: 'frida',
             })
+            const ver = '15.0.14';
             const {
               data: { tag_name: ver }
             } = releaseResponse;
