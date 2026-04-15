@@ -23,11 +23,10 @@ jobs:
               owner: 'frida',
               repo: 'frida',
             })
-            let ver = '15.0.14';
             const {
-              data: { tag_name: ver }
+              data: { tag_name: '15.0.14' }
             } = releaseResponse;
-            core.setOutput('FRIDA_VERSION', ver);
+            core.setOutput('FRIDA_VERSION', '15.0.14');
       - name: Check release version
         id: checkReleaseVersion
         uses: actions/github-script@v3.1.0
